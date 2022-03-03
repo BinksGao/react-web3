@@ -1,0 +1,199 @@
+@import 'moudle/card.less';
+@import 'moudle/lable.less';
+@import 'moudle/searchItem.less';
+@import 'antd/input.less';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'inherit', 'Arial';
+}
+body {
+  -webkit-overflow-scrolling: touch;
+}
+p {
+  margin: 0;
+}
+#root-tol {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* @module scrollbar(滚动条) start */
+::-webkit-scrollbar-track-piece {
+  background-color: #f8f8f8;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+  background-clip: padding-box;
+  min-height: 28px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(167, 164, 164);
+}
+
+/* @module scrollbar(滚动条) end */
+
+/* 一期基础信息部分公共样式 start */
+
+/* table 表格样式 start */
+.ant-table-content::-webkit-scrollbar,
+.ant-table-body::-webkit-scrollbar,
+.ant-table-tbody::-webkit-scrollbar {
+  display: block;
+}
+.ant-table-content::-webkit-scrollbar-thumb,
+.ant-table-body::-webkit-scrollbar-thumb,
+.ant-table-tbody::-webkit-scrollbar-thumb {
+  border-radius: 0;
+}
+.ant-table-fixed-left,
+.ant-table-fixed-right {
+  bottom: 10px;
+}
+
+/* table 表格样式 end */
+
+.error_border {
+  input {
+    border-color: #e8e8e8 !important;
+  }
+}
+.table_button_wrapper {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.table_button_item {
+  height: 32px;
+  line-height: 32px;
+}
+.table_button_item + .table_button_item {
+  margin-left: 10px;
+}
+
+/* 一期基础信息部分公共样式 end */
+
+/* @module page-content (界面的缩放) start */
+.custom-page-btn {
+  margin-left: 10px;
+}
+
+/* @module page-content (界面的缩放) end */
+.cus-from-item {
+  width: 100%;
+}
+
+/* @module input 框 宽度 end */
+
+/* @module 按钮的处理 start */
+.btn-inline-group {
+  span,
+  button {
+    margin-left: 13px;
+  }
+  span:nth-child(1),
+  button:nth-child(1) {
+    margin-left: 0;
+  }
+}
+.search-btn {
+  margin: 19px 0 24px;
+}
+.model-btn {
+  width: 64px;
+}
+.span-link span {
+  font-size: 11px;
+  color: rgba(0, 122, 255, 1);
+  cursor: pointer;
+}
+
+/* @module 按钮的处理 end */
+
+/* @module select 下拉框 start */
+
+.cus-select-autowidth {
+  .ant-select-dropdown[style] {
+    min-width: 200px;
+    width: auto !important;
+  }
+}
+
+.cus-select-autowidth-240 {
+  .ant-select-dropdown[style] {
+    min-width: 240px;
+    width: auto !important;
+  }
+}
+/* @module select 下拉框 end */
+
+/* 主界面的padding start */
+
+.cus-home-content {
+  padding: 21px;
+  background-color: #fff;
+  min-height: 650px;
+}
+/* 主界面的padding end */
+
+.ant-descriptions-title {
+  font-size: 16px !important;
+}
+
+.common-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  height: 24px;
+  line-height: 24px;
+}
+.ant-descriptions-item-container {
+  .ant-descriptions-item-content {
+    color: #333;
+  }
+  .ant-descriptions-item-label {
+    color: #666;
+  }
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 30px;
+}
+.marginT10 {
+  margin-top: 10px;
+}
+
+.marginB10 {
+  margin-bottom: 10px;
+}
+.marginB20 {
+  margin-bottom: 20px;
+}
+
+.marginT20 {
+  margin-top: 20px;
+}
+
+.errorText {
+  color: #ff4d4f;
+}
+
+.errorBorder,
+.errorBorder .ant-select-selector {
+  border-color: #ff4d4f !important;
+}
+
+.font_bold {
+  font-weight: bold;
+  font-size: 18px;
+}

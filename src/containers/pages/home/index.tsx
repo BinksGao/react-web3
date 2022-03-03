@@ -23,6 +23,13 @@ export default class Home extends RootComponent<HomeProps, HomeState> {
       minHeight
     }
   }
+  componentDidMount () {
+    window.addEventListener('resize', this.setPageHeight)
+  }
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.setPageHeight)
+  }
+
   refreshRoutes = () => {
     this.setState(
       {
@@ -34,6 +41,11 @@ export default class Home extends RootComponent<HomeProps, HomeState> {
         }, 1500)
       }
     )
+  }
+  setPageHeight = () => {
+    this.setState({
+      minHeight: document.body.clientHeight
+    })
   }
   render () {
     return (
